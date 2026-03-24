@@ -18,9 +18,8 @@ export const contactRouter = createTRPCRouter({
       const resend = new Resend(`${process.env.RESEND_API_KEY_CONTACT}`);
       const data = await resend.emails.send({
         from: "admin@brykagp.com",
-        to: "shubham.patil@skavinya.com",
+        to: "info@celeztek.com",
         cc: "shubham.patil@skavinya.com",
-        bcc: "shubham.patil@skavinya.com",
         subject: "Form Submission: Bryka Inc - Contact Us Page",
         html: `Customer Name: ${input.name} <br/> Company Name: ${input.company} <br/> Email Address: ${input.email} <br /> Mobile Number: ${input.mobile}  <br/> ${input.message}`,
       });

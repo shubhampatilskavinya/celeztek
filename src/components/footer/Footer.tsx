@@ -77,18 +77,19 @@ const Footer = () => {
                 <Mail size={16} />
                 info@celeztek.com
               </a>
-
+{/* 
               <a
                 href="tel:+1234567890"
                 className="flex items-center gap-2 text-sm text-slate-300 transition-colors hover:text-blue-400"
               >
                 <Phone size={16} />
                 +91-XXXXXXXXXX
-              </a>
+              </a> */}
 
               <span className="flex items-center gap-2 text-sm text-slate-300">
                 <MapPin size={16} />
-                1621 Hillside Avenue, North New Hyde Park, New York 11040, United States
+                1621 Hillside Avenue, North New Hyde Park, New York 11040,
+                United States
               </span>
             </div>
           </div>
@@ -100,17 +101,13 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-4">
-            <Link
-              href="/privacy-policy"
-              className="text-sm text-slate-400 transition-colors hover:text-blue-400"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms-of-service"
-              className="text-sm text-slate-400 transition-colors hover:text-blue-400"
-            >
-              Terms of Service
+            <Link href="/" className="flex items-center gap-2">
+             <div className="mb-4 flex items-center gap-2">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600">
+                <span className="text-lg font-bold text-white">C</span>
+              </div>
+              <span className="text-xl font-bold tracking-tight">Celeztek</span>
+            </div>
             </Link>
           </div>
         </div>
